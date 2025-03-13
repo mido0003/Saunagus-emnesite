@@ -37,14 +37,21 @@
             gap: 20px;
             margin-top: 20px;
         }
+        
+.grid-item {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
         .grid-item {
             text-align: center;
         }
         .grid-item img {
-            width: 250px;
-            height: 250px;
+            width: 350px;
+            height: 350px;
             border-radius: 10px;
-            border: 3px solid #f7af43;
+            border: 6px solid #f7af43;
         }
         .grid-item button {
             background-color: #f7af43;
@@ -53,11 +60,14 @@
             margin-top: 10px;
             cursor: pointer;
             font-weight: bold;
+            width: 100%;
+            max-width: 250px;
+            border-radius: 30px;
         }
         .about {
             text-align: left;
             padding: 50px 20px;
-            background: url('sunset-background.jpg') no-repeat center center;
+            background: url('kryds-på-himlen-med-solnedgang.png') no-repeat center center;
             background-size: cover;
             color: rgb(0, 0, 0);
         }
@@ -68,10 +78,182 @@
         margin-left: 0;
 
     }
+/* Stregerne ved teksten 'Hvem er jeg' */
+    .about-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    }
 
+    .about-title::before
+    .about-title::after {
+        content: "";
+        flex: 1;
+        height: 2px;
+        background-color: #000;
+        max-width: 250px;
+    }
+
+
+
+    /* Overskriften på min velkommen forside */
+    #H1-Velkommen{
+        text-align: left;
+        font-weight: bold; 
+        font-size: 50px;
+        margin-left: 260px;
+    }
+
+    /* Min 'saunagus og vinterbadning' skrift på forsiden*/
+    h2 {
+        text-align: center;
+        font-weight: bold;
+    }
+/* Overskrift til min Ny hobby side */
+    #Start-en-ny-og-sund-hobby{
+        text-align: left;
+        font-weight: bold; 
+        font-size: 50px;
+        margin-left: 480px;
+    }
+
+    h2 {
+        text-align: center;
+        font-weight: bold;
+    }
         
         footer {
             text-align: left;
             padding: 20px;
             background-color: #f8e6c0;
         }
+
+/* Mine to streger der er på hver side af ordet 'saunagus og vinterbadning' */
+.section-title {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 20px; 
+    margin: 20px 0;
+}
+
+.line {
+    width:350px;
+    height: 2px; 
+    background-color:#000000;
+}
+
+h3 {
+white-space: nowrap;
+}
+
+/* Mine to streger der er på hver side af ordet 'kom godt fra start' */
+.line-countainer {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    margin-top:20px;
+}
+
+.left-line {
+    width: 200px;
+    border-bottom: 2px solid black;
+}
+
+.right-line {
+    width: 1000px;
+    border-bottom: 2px solid black;
+}
+
+h3 {
+white-space: nowrap;
+}
+
+
+
+#Tekst-under-hvem-er-jeg{
+    text-align: left;
+    font-weight: bold; 
+    margin-left: 100px;
+    margin-right: 1000px;
+}
+
+#Tekst-citat{
+    text-align: left;
+    font-weight: bold; 
+    margin-left: 100px;
+    margin-right: 1000px;
+}
+
+
+/*Ny hobby side*/
+
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    background: #fffada;
+    padding: 20px;
+}
+
+.left, .right {
+    flex: 1;
+    padding: 20px;
+}
+
+.left img, .right img {
+    width: 100%;
+    border: 5px solid #f7af43;
+    border-radius: 5px;
+}
+
+h2, h3 {
+    color: #000000;
+}
+
+p {
+    line-height: 1.6;
+    color: #000000;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+
+.left img, .right img {
+    width: 100%; /* Sørger for at billederne fylder deres container */
+    height: 350px; /* Sætter en fast højde, justér efter behov */
+    object-fit: cover; /* Sikrer at billedet beskæres korrekt uden forvrængning */
+    border: 5px solid #E6B17E;
+    border-radius: 5px;
+}
+
+p {
+    text-align: left;
+}
+
+li {
+ text-align: left;
+}
+
+h2 {
+    text-align: left;
+}
+
+
+footer {
+    text-align: left;
+    padding: 40px;
+    background-color: #f8e6c0;
+}
+
+footer p {
+    font-size: 20px; /* Større skrift */
+    font-weight: normal; /* Ikke fed skrift */
+    margin: 10px 0;
+}
+
