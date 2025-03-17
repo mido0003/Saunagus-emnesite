@@ -550,20 +550,36 @@ padding-bottom: 25px;
 .menu {
 display:flex;
 list-style-type: none;
-padding:2em
-a { 
-    text-decoration: none;
-}
+padding:2em; 
+ a {
+        text-decoration: none;
+    }
 
 a:hover {
     color: #f7af43;
 }
-
 }
 
 
+button { 
+    font-family: Josefin;
+    color: #000000;
+    font-size: medium;
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+    a:hover {
+        color:#000000
+    }
 
+}
 
+strong {
+    font-family: Josefinbold;
+    font-style: bold;
+    color:rgb(109, 43, 1);
+}
 /* footer */
 
 footer {
