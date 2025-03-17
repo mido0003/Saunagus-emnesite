@@ -20,16 +20,18 @@
         nav ul li a {
             text-decoration: none;
             color: #000;
-            font-weight: bold;
+            font-size: 20px;
+            font-family: Josefin;
         }
         .contact-button {
-            background-color: #d4a373;
+            background-color: #fffada;
             padding: 10px 15px;
             border-radius: 5px;
         }
         .hero {
             text-align: center;
             padding: 50px 20px;
+            font-family: Josefin;
         }
         .grid-container {
             display: flex;
@@ -71,13 +73,20 @@
             background-size: cover;
             color: rgb(0, 0, 0);
         }
-        
+
     .about blockquote {
         text-align: left;
         font-weight: bold; 
         margin-left: 0;
 
     }
+/* Kryds på himlen VELKOMMEN siden */
+    img {
+        width: 100vw; /* Får billedet til at fylde hele skærmens bredde */
+        height: auto; /* Bevarer billedets proportioner */
+        object-fit: cover; /* Sikrer, at billedet bevarer sin æstetik */
+    }
+
 /* Stregerne ved teksten 'Hvem er jeg' */
     .about-title {
     display: flex;
@@ -86,42 +95,66 @@
     gap: 20px;
     }
 
-    .about-title::before
-    .about-title::after {
-        content: "";
-        flex: 1;
-        height: 2px;
-        background-color: #000;
-        max-width: 250px;
+    .title-with-lines {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px; /* Justér størrelsen efter behov */
+        margin: 20px 0;
+        padding-right: 350px;
+        padding-left: 350px;
     }
 
+
+    .title-with-lines::before,
+    .title-with-lines::after {
+        content: "";
+        flex: 1;
+        border-top: 2px solid black; /* Tykkelsen og farven på linjerne */
+        margin: 0 15px; /* Afstand mellem teksten og linjerne */
+    }
+
+#Beskrivelse_af_mig{
+        text-align: left;
+        font-size: 20px;
+        font-family: Josefin;
+        padding-left: 300px;
+        padding-right: 300px;
+
+    }
 
 
     /* Overskriften på min velkommen forside */
     #H1-Velkommen{
         text-align: left;
-        font-weight: bold; 
         font-size: 50px;
-        margin-left: 260px;
+        margin-left: 380px;
+        font-family: Josefinbold;
     }
 
     /* Min 'saunagus og vinterbadning' skrift på forsiden*/
     h2 {
         text-align: center;
-        font-weight: bold;
+        font-family: Josefinbold;
     }
 /* Overskrift til min Ny hobby side */
     #Start-en-ny-og-sund-hobby{
         text-align: left;
-        font-weight: bold; 
         font-size: 50px;
-        margin-left: 480px;
+        margin-left: 390px;
+        font-family: Josefinbold;
+        color: #000000;
     }
 
-    h2 {
+  #Livsstil {
         text-align: center;
-        font-weight: bold;
-    }
+        font-family: Josefinbold;
+        color: #000000;
+        
+
+  }
+
         
         footer {
             text-align: left;
@@ -138,18 +171,23 @@
     margin: 20px 0;
 }
 
-.line {
+.left-line-hvorfor-er-det-sundt {
     width:350px;
     height: 2px; 
     background-color:#000000;
+    margin-left: 400px;
 }
+
 
 h3 {
 white-space: nowrap;
+font-family: Josefin;
 }
 
-/* Mine to streger der er på hver side af ordet 'kom godt fra start' */
-.line-countainer {
+
+/* Linjer ved kom godt fra start */
+
+.line-countainer-kom-godt-fra-start {
     display: flex;
     align-items:center;
     justify-content: center;
@@ -157,34 +195,79 @@ white-space: nowrap;
     margin-top:20px;
 }
 
-.left-line {
+.left-line-kom-godt-fra-start {
     width: 200px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 
-.right-line {
+.right-line-kom-godt-fra-start {
     width: 1000px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
+
+
+/* Linjer ved livsstil */
+
+.line-countainer-livsstil {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    margin-top:20px;
+}
+
+.left-line-livsstil {
+    width: 200px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.right-line-livsstil {
+    width: 1000px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding-left: 90px;
+}
+
+/* Linjer ved dufte */
+
+.line-countainer-dufte {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    margin-top:20px;
+}
+
+.left-line-dufte {
+    width: 200px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.right-line-dufte {
+    width: 1000px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+
+
+
 
 h3 {
 white-space: nowrap;
+font-family: Josefin;
 }
 
 
 
 #Tekst-under-hvem-er-jeg{
     text-align: left;
-    font-weight: bold; 
     margin-left: 100px;
     margin-right: 1000px;
+    font-family: Josefin;
 }
 
 #Tekst-citat{
-    text-align: left;
-    font-weight: bold; 
-    margin-left: 100px;
-    margin-right: 1000px;
+    padding-left: 600px;
+    font-family: Josefin;
 }
 
 
@@ -211,6 +294,7 @@ white-space: nowrap;
 
 h2, h3 {
     color: #000000;
+    font-family: Josefin;
 }
 
 p {
@@ -221,6 +305,7 @@ p {
 ul {
     list-style-type: disc;
     padding-left: 20px;
+    font-family: Josefin;
 }
 
 
@@ -234,16 +319,252 @@ ul {
 
 p {
     text-align: left;
+    font-family: Josefin;
 }
 
 li {
  text-align: left;
+ font-family: Josefin;
 }
 
 h2 {
     text-align: left;
+    font-family: Josefin;
 }
 
+/* Dufte og æteriskeolier side */
+
+
+#Duftenes-egenskaber{
+    text-align: left;
+    font-size: 50px;
+    margin-left: 390px;
+    font-family: Josefinbold;
+    color: #000000;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dynamisk opsætning */
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+    justify-content: center;
+}
+
+.card {
+    background-color:#fffada;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+    color: #df6464;
+    text-align: left;
+    font-family: Josefin;
+    padding-right: 170px;
+}
+
+#Saunagus-overskrift {
+    color: #000000;
+    text-align: left;
+    font-family: Josefin;
+    padding-right: 170px;   
+}
+
+#Vinterbadning-overskrift {
+    color: #000000;
+    text-align: left;
+    font-family: Josefin;
+    padding-right: 170px;   
+}
+
+#Saunagus-overskrift {
+    color: #000000;
+    text-align: left;
+    font-family: Josefin;
+    padding-right: 170px;   
+}
+
+#Hvem-er-jeg {
+    color: #000000;
+    text-align: left;
+    font-family: Josefinbold;
+    padding-left: 30px;  
+    padding-right: 30px; 
+}
+
+#Klar-parat-begynd {
+    color: #000000;
+    text-align: left;
+    font-family: Josefin;
+    padding-right: 170px;   
+}
+#Mine-raad-til-dig {
+    color: #000000;
+    text-align: left;
+    font-family: Josefin;
+    padding-right: 170px;   
+}
+
+
+
+/* Få min billeder til at flugte ved at lave padding under min nederste tekst over billedet */
+
+#Lavendel-underskrift {
+padding-bottom: 25px;
+}
+
+#Eukalyptus-underskrift {
+    padding-bottom: 82px;
+}
+
+#Mandarin-underskrift {
+    padding-bottom: 108px;
+}
+
+#Muskatelsalvie-underskrift {
+    padding-bottom: 25px;
+}
+
+#Palosanto-underskrift {
+    padding-bottom: 132px;
+}
+
+#Pebermynte-underskrift {
+    padding-bottom: 80px;
+}
+
+/* lang streg mellem de tre øverste billeder og de tre nederste i dufte siden */
+
+
+
+
+/* Mine overskrifter til ine duftes navne i 'Dufte og æteriske olier */
+#Eukalyptus-overskrift {
+    color: #000000;
+    font-family: Josefin;
+    text-align: left;
+    padding-right: 160px;
+}
+
+#Lavendel-overskrift {
+    color: #000000;
+    font-family: Josefin;
+    text-align: left;
+    padding-right: 175px;
+}
+
+#Mandarin-overskrift {
+    color: #000000;
+    font-family: Josefin;
+    text-align: left;
+    padding-right: 175px;
+}
+
+#Muskatelsalvie-overskrift {
+    color: #000000;
+    font-family: Josefin;
+    text-align: left;
+    padding-right: 110px;
+}
+
+#Palosanto-overskrift {
+    color: #000000;
+    font-family: Josefin;
+    text-align: left;
+    padding-right: 155px;
+}
+
+#Pebermynte-overskrift {
+    color: #000000;
+    font-family: Josefin;
+    text-align: left;
+    padding-right: 145px;
+}
+
+
+.card img {
+    width: 100%;
+    max-width: 350px; /* Billederne bliver max 350px */
+    height: 350px;
+    border: 6px solid #a78295;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Forskellige kantfarver til billederne */
+.card:nth-child(1) img { border-color: #f7af43; }
+.card:nth-child(2) img { border-color: #f7af43; }
+.card:nth-child(3) img { border-color: #f7af43; }
+.card:nth-child(4) img { border-color: #f7af43; }
+.card:nth-child(5) img { border-color: #f7af43; }
+.card:nth-child(6) img { border-color: #f7af43; }
+
+
+/* Duffte og æteriske olier SLUT */
+
+/* Hvorfor er det sundt skrift øverst */
+#Hvorfor-er-det-sundt{
+    text-align: left;
+    font-size: 50px;
+    margin-left: 400px;
+    font-family: Josefinbold;
+    color: #000000;
+}
+
+
+
+
+/* Prøver at lave linjer på hver side af hvem er jeg */
+.line-countainer2 {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    margin-top:20px;
+}
+
+.left-line2 {
+    width: 100px;
+    border-bottom: 2px solid black;
+    padding-left: 150px ;
+
+}
+
+.right-line2 {
+    width: 100px;
+    border-bottom: 2px solid black;
+    padding-right: 150px;
+}
+
+
+
+
+
+/* menu */
+
+
+.menu {
+display:flex;
+list-style-type: none;
+padding:2em
+a { 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f7af43;
+}
+
+}
+
+
+
+
+/* footer */
 
 footer {
     text-align: left;
@@ -255,5 +576,30 @@ footer p {
     font-size: 20px; /* Større skrift */
     font-weight: normal; /* Ikke fed skrift */
     margin: 10px 0;
+    font-family: Josefin;
 }
 
+
+/* Mine skrifttyper */
+@font-face {
+    font-family: Josefin;
+    src: url(/fonte/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Josefinbold;
+    src: url(/fonte/JosefinSans-SemiBold.ttf);
+}
+
+/* Ovenpa */
+
+.grid_ovenpaa {
+    display: grid;
+}
+.grid_ovenpaa img, .text-ovenpa {
+    grid-column: 1/2;
+    grid-row:1/2;
+}
+.text-ovenpa {
+    place-self: center;
+}
